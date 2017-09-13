@@ -47,7 +47,7 @@
                   max-width: calc(100% / #{$cf} - #{($wm * $WRAP_MARGIN_LOOP_STEP) / $cf * ($cf - 1)+px})
                   flex: 1 1 calc(100% / #{$cf} - #{($wm * $WRAP_MARGIN_LOOP_STEP) / $cf * ($cf - 1)+px})
                   margin-bottom: #{$wm * $WRAP_MARGIN_LOOP_STEP}px
-                  &:not(:nth-child(3n+3))
+                  &:not(:nth-child(#{$cf}n+#{$cf}))
                     margin-right: #{$wm * $WRAP_MARGIN_LOOP_STEP}px
 
   *[#{$size}col]

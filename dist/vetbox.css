@@ -697,7 +697,7 @@
         -ms-flex: 1 1 calc(100% / 1 - 0px);
             flex: 1 1 calc(100% / 1 - 0px);
     margin-bottom: 5px; }
-    *[row][cols-flex="1"][margins="5"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="1"][margins="5"] > *:not(:nth-child(1n+1)) {
       margin-right: 5px; }
   *[row][cols-flex="1"][margins="10"] > * {
     max-width: -webkit-calc(100% / 1 - 0px);
@@ -707,7 +707,7 @@
         -ms-flex: 1 1 calc(100% / 1 - 0px);
             flex: 1 1 calc(100% / 1 - 0px);
     margin-bottom: 10px; }
-    *[row][cols-flex="1"][margins="10"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="1"][margins="10"] > *:not(:nth-child(1n+1)) {
       margin-right: 10px; }
   *[row][cols-flex="1"][margins="15"] > * {
     max-width: -webkit-calc(100% / 1 - 0px);
@@ -717,7 +717,7 @@
         -ms-flex: 1 1 calc(100% / 1 - 0px);
             flex: 1 1 calc(100% / 1 - 0px);
     margin-bottom: 15px; }
-    *[row][cols-flex="1"][margins="15"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="1"][margins="15"] > *:not(:nth-child(1n+1)) {
       margin-right: 15px; }
   *[row][cols-flex="1"][margins="20"] > * {
     max-width: -webkit-calc(100% / 1 - 0px);
@@ -727,7 +727,7 @@
         -ms-flex: 1 1 calc(100% / 1 - 0px);
             flex: 1 1 calc(100% / 1 - 0px);
     margin-bottom: 20px; }
-    *[row][cols-flex="1"][margins="20"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="1"][margins="20"] > *:not(:nth-child(1n+1)) {
       margin-right: 20px; }
   *[row][cols-flex="1"][margins="25"] > * {
     max-width: -webkit-calc(100% / 1 - 0px);
@@ -737,7 +737,7 @@
         -ms-flex: 1 1 calc(100% / 1 - 0px);
             flex: 1 1 calc(100% / 1 - 0px);
     margin-bottom: 25px; }
-    *[row][cols-flex="1"][margins="25"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="1"][margins="25"] > *:not(:nth-child(1n+1)) {
       margin-right: 25px; }
   *[row][cols-flex="1"][margins="30"] > * {
     max-width: -webkit-calc(100% / 1 - 0px);
@@ -747,7 +747,7 @@
         -ms-flex: 1 1 calc(100% / 1 - 0px);
             flex: 1 1 calc(100% / 1 - 0px);
     margin-bottom: 30px; }
-    *[row][cols-flex="1"][margins="30"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="1"][margins="30"] > *:not(:nth-child(1n+1)) {
       margin-right: 30px; }
   *[row][cols-flex="1"][margins="35"] > * {
     max-width: -webkit-calc(100% / 1 - 0px);
@@ -757,7 +757,7 @@
         -ms-flex: 1 1 calc(100% / 1 - 0px);
             flex: 1 1 calc(100% / 1 - 0px);
     margin-bottom: 35px; }
-    *[row][cols-flex="1"][margins="35"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="1"][margins="35"] > *:not(:nth-child(1n+1)) {
       margin-right: 35px; }
   *[row][cols-flex="1"][margins="40"] > * {
     max-width: -webkit-calc(100% / 1 - 0px);
@@ -767,7 +767,7 @@
         -ms-flex: 1 1 calc(100% / 1 - 0px);
             flex: 1 1 calc(100% / 1 - 0px);
     margin-bottom: 40px; }
-    *[row][cols-flex="1"][margins="40"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="1"][margins="40"] > *:not(:nth-child(1n+1)) {
       margin-right: 40px; }
   *[row][cols-flex="1"][margins="45"] > * {
     max-width: -webkit-calc(100% / 1 - 0px);
@@ -777,7 +777,7 @@
         -ms-flex: 1 1 calc(100% / 1 - 0px);
             flex: 1 1 calc(100% / 1 - 0px);
     margin-bottom: 45px; }
-    *[row][cols-flex="1"][margins="45"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="1"][margins="45"] > *:not(:nth-child(1n+1)) {
       margin-right: 45px; }
   *[row][cols-flex="1"][margins="50"] > * {
     max-width: -webkit-calc(100% / 1 - 0px);
@@ -787,7 +787,7 @@
         -ms-flex: 1 1 calc(100% / 1 - 0px);
             flex: 1 1 calc(100% / 1 - 0px);
     margin-bottom: 50px; }
-    *[row][cols-flex="1"][margins="50"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="1"][margins="50"] > *:not(:nth-child(1n+1)) {
       margin-right: 50px; }
   *[row][cols-flex="2"] > * {
     max-width: -webkit-calc(100% / 2);
@@ -804,7 +804,7 @@
         -ms-flex: 1 1 calc(100% / 2 - 2.5px);
             flex: 1 1 calc(100% / 2 - 2.5px);
     margin-bottom: 5px; }
-    *[row][cols-flex="2"][margins="5"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="2"][margins="5"] > *:not(:nth-child(2n+2)) {
       margin-right: 5px; }
   *[row][cols-flex="2"][margins="10"] > * {
     max-width: -webkit-calc(100% / 2 - 5px);
@@ -814,7 +814,7 @@
         -ms-flex: 1 1 calc(100% / 2 - 5px);
             flex: 1 1 calc(100% / 2 - 5px);
     margin-bottom: 10px; }
-    *[row][cols-flex="2"][margins="10"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="2"][margins="10"] > *:not(:nth-child(2n+2)) {
       margin-right: 10px; }
   *[row][cols-flex="2"][margins="15"] > * {
     max-width: -webkit-calc(100% / 2 - 7.5px);
@@ -824,7 +824,7 @@
         -ms-flex: 1 1 calc(100% / 2 - 7.5px);
             flex: 1 1 calc(100% / 2 - 7.5px);
     margin-bottom: 15px; }
-    *[row][cols-flex="2"][margins="15"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="2"][margins="15"] > *:not(:nth-child(2n+2)) {
       margin-right: 15px; }
   *[row][cols-flex="2"][margins="20"] > * {
     max-width: -webkit-calc(100% / 2 - 10px);
@@ -834,7 +834,7 @@
         -ms-flex: 1 1 calc(100% / 2 - 10px);
             flex: 1 1 calc(100% / 2 - 10px);
     margin-bottom: 20px; }
-    *[row][cols-flex="2"][margins="20"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="2"][margins="20"] > *:not(:nth-child(2n+2)) {
       margin-right: 20px; }
   *[row][cols-flex="2"][margins="25"] > * {
     max-width: -webkit-calc(100% / 2 - 12.5px);
@@ -844,7 +844,7 @@
         -ms-flex: 1 1 calc(100% / 2 - 12.5px);
             flex: 1 1 calc(100% / 2 - 12.5px);
     margin-bottom: 25px; }
-    *[row][cols-flex="2"][margins="25"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="2"][margins="25"] > *:not(:nth-child(2n+2)) {
       margin-right: 25px; }
   *[row][cols-flex="2"][margins="30"] > * {
     max-width: -webkit-calc(100% / 2 - 15px);
@@ -854,7 +854,7 @@
         -ms-flex: 1 1 calc(100% / 2 - 15px);
             flex: 1 1 calc(100% / 2 - 15px);
     margin-bottom: 30px; }
-    *[row][cols-flex="2"][margins="30"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="2"][margins="30"] > *:not(:nth-child(2n+2)) {
       margin-right: 30px; }
   *[row][cols-flex="2"][margins="35"] > * {
     max-width: -webkit-calc(100% / 2 - 17.5px);
@@ -864,7 +864,7 @@
         -ms-flex: 1 1 calc(100% / 2 - 17.5px);
             flex: 1 1 calc(100% / 2 - 17.5px);
     margin-bottom: 35px; }
-    *[row][cols-flex="2"][margins="35"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="2"][margins="35"] > *:not(:nth-child(2n+2)) {
       margin-right: 35px; }
   *[row][cols-flex="2"][margins="40"] > * {
     max-width: -webkit-calc(100% / 2 - 20px);
@@ -874,7 +874,7 @@
         -ms-flex: 1 1 calc(100% / 2 - 20px);
             flex: 1 1 calc(100% / 2 - 20px);
     margin-bottom: 40px; }
-    *[row][cols-flex="2"][margins="40"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="2"][margins="40"] > *:not(:nth-child(2n+2)) {
       margin-right: 40px; }
   *[row][cols-flex="2"][margins="45"] > * {
     max-width: -webkit-calc(100% / 2 - 22.5px);
@@ -884,7 +884,7 @@
         -ms-flex: 1 1 calc(100% / 2 - 22.5px);
             flex: 1 1 calc(100% / 2 - 22.5px);
     margin-bottom: 45px; }
-    *[row][cols-flex="2"][margins="45"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="2"][margins="45"] > *:not(:nth-child(2n+2)) {
       margin-right: 45px; }
   *[row][cols-flex="2"][margins="50"] > * {
     max-width: -webkit-calc(100% / 2 - 25px);
@@ -894,7 +894,7 @@
         -ms-flex: 1 1 calc(100% / 2 - 25px);
             flex: 1 1 calc(100% / 2 - 25px);
     margin-bottom: 50px; }
-    *[row][cols-flex="2"][margins="50"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="2"][margins="50"] > *:not(:nth-child(2n+2)) {
       margin-right: 50px; }
   *[row][cols-flex="3"] > * {
     max-width: -webkit-calc(100% / 3);
@@ -1018,7 +1018,7 @@
         -ms-flex: 1 1 calc(100% / 4 - 3.75px);
             flex: 1 1 calc(100% / 4 - 3.75px);
     margin-bottom: 5px; }
-    *[row][cols-flex="4"][margins="5"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="4"][margins="5"] > *:not(:nth-child(4n+4)) {
       margin-right: 5px; }
   *[row][cols-flex="4"][margins="10"] > * {
     max-width: -webkit-calc(100% / 4 - 7.5px);
@@ -1028,7 +1028,7 @@
         -ms-flex: 1 1 calc(100% / 4 - 7.5px);
             flex: 1 1 calc(100% / 4 - 7.5px);
     margin-bottom: 10px; }
-    *[row][cols-flex="4"][margins="10"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="4"][margins="10"] > *:not(:nth-child(4n+4)) {
       margin-right: 10px; }
   *[row][cols-flex="4"][margins="15"] > * {
     max-width: -webkit-calc(100% / 4 - 11.25px);
@@ -1038,7 +1038,7 @@
         -ms-flex: 1 1 calc(100% / 4 - 11.25px);
             flex: 1 1 calc(100% / 4 - 11.25px);
     margin-bottom: 15px; }
-    *[row][cols-flex="4"][margins="15"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="4"][margins="15"] > *:not(:nth-child(4n+4)) {
       margin-right: 15px; }
   *[row][cols-flex="4"][margins="20"] > * {
     max-width: -webkit-calc(100% / 4 - 15px);
@@ -1048,7 +1048,7 @@
         -ms-flex: 1 1 calc(100% / 4 - 15px);
             flex: 1 1 calc(100% / 4 - 15px);
     margin-bottom: 20px; }
-    *[row][cols-flex="4"][margins="20"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="4"][margins="20"] > *:not(:nth-child(4n+4)) {
       margin-right: 20px; }
   *[row][cols-flex="4"][margins="25"] > * {
     max-width: -webkit-calc(100% / 4 - 18.75px);
@@ -1058,7 +1058,7 @@
         -ms-flex: 1 1 calc(100% / 4 - 18.75px);
             flex: 1 1 calc(100% / 4 - 18.75px);
     margin-bottom: 25px; }
-    *[row][cols-flex="4"][margins="25"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="4"][margins="25"] > *:not(:nth-child(4n+4)) {
       margin-right: 25px; }
   *[row][cols-flex="4"][margins="30"] > * {
     max-width: -webkit-calc(100% / 4 - 22.5px);
@@ -1068,7 +1068,7 @@
         -ms-flex: 1 1 calc(100% / 4 - 22.5px);
             flex: 1 1 calc(100% / 4 - 22.5px);
     margin-bottom: 30px; }
-    *[row][cols-flex="4"][margins="30"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="4"][margins="30"] > *:not(:nth-child(4n+4)) {
       margin-right: 30px; }
   *[row][cols-flex="4"][margins="35"] > * {
     max-width: -webkit-calc(100% / 4 - 26.25px);
@@ -1078,7 +1078,7 @@
         -ms-flex: 1 1 calc(100% / 4 - 26.25px);
             flex: 1 1 calc(100% / 4 - 26.25px);
     margin-bottom: 35px; }
-    *[row][cols-flex="4"][margins="35"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="4"][margins="35"] > *:not(:nth-child(4n+4)) {
       margin-right: 35px; }
   *[row][cols-flex="4"][margins="40"] > * {
     max-width: -webkit-calc(100% / 4 - 30px);
@@ -1088,7 +1088,7 @@
         -ms-flex: 1 1 calc(100% / 4 - 30px);
             flex: 1 1 calc(100% / 4 - 30px);
     margin-bottom: 40px; }
-    *[row][cols-flex="4"][margins="40"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="4"][margins="40"] > *:not(:nth-child(4n+4)) {
       margin-right: 40px; }
   *[row][cols-flex="4"][margins="45"] > * {
     max-width: -webkit-calc(100% / 4 - 33.75px);
@@ -1098,7 +1098,7 @@
         -ms-flex: 1 1 calc(100% / 4 - 33.75px);
             flex: 1 1 calc(100% / 4 - 33.75px);
     margin-bottom: 45px; }
-    *[row][cols-flex="4"][margins="45"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="4"][margins="45"] > *:not(:nth-child(4n+4)) {
       margin-right: 45px; }
   *[row][cols-flex="4"][margins="50"] > * {
     max-width: -webkit-calc(100% / 4 - 37.5px);
@@ -1108,7 +1108,7 @@
         -ms-flex: 1 1 calc(100% / 4 - 37.5px);
             flex: 1 1 calc(100% / 4 - 37.5px);
     margin-bottom: 50px; }
-    *[row][cols-flex="4"][margins="50"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="4"][margins="50"] > *:not(:nth-child(4n+4)) {
       margin-right: 50px; }
   *[row][cols-flex="5"] > * {
     max-width: -webkit-calc(100% / 5);
@@ -1125,7 +1125,7 @@
         -ms-flex: 1 1 calc(100% / 5 - 4px);
             flex: 1 1 calc(100% / 5 - 4px);
     margin-bottom: 5px; }
-    *[row][cols-flex="5"][margins="5"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="5"][margins="5"] > *:not(:nth-child(5n+5)) {
       margin-right: 5px; }
   *[row][cols-flex="5"][margins="10"] > * {
     max-width: -webkit-calc(100% / 5 - 8px);
@@ -1135,7 +1135,7 @@
         -ms-flex: 1 1 calc(100% / 5 - 8px);
             flex: 1 1 calc(100% / 5 - 8px);
     margin-bottom: 10px; }
-    *[row][cols-flex="5"][margins="10"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="5"][margins="10"] > *:not(:nth-child(5n+5)) {
       margin-right: 10px; }
   *[row][cols-flex="5"][margins="15"] > * {
     max-width: -webkit-calc(100% / 5 - 12px);
@@ -1145,7 +1145,7 @@
         -ms-flex: 1 1 calc(100% / 5 - 12px);
             flex: 1 1 calc(100% / 5 - 12px);
     margin-bottom: 15px; }
-    *[row][cols-flex="5"][margins="15"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="5"][margins="15"] > *:not(:nth-child(5n+5)) {
       margin-right: 15px; }
   *[row][cols-flex="5"][margins="20"] > * {
     max-width: -webkit-calc(100% / 5 - 16px);
@@ -1155,7 +1155,7 @@
         -ms-flex: 1 1 calc(100% / 5 - 16px);
             flex: 1 1 calc(100% / 5 - 16px);
     margin-bottom: 20px; }
-    *[row][cols-flex="5"][margins="20"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="5"][margins="20"] > *:not(:nth-child(5n+5)) {
       margin-right: 20px; }
   *[row][cols-flex="5"][margins="25"] > * {
     max-width: -webkit-calc(100% / 5 - 20px);
@@ -1165,7 +1165,7 @@
         -ms-flex: 1 1 calc(100% / 5 - 20px);
             flex: 1 1 calc(100% / 5 - 20px);
     margin-bottom: 25px; }
-    *[row][cols-flex="5"][margins="25"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="5"][margins="25"] > *:not(:nth-child(5n+5)) {
       margin-right: 25px; }
   *[row][cols-flex="5"][margins="30"] > * {
     max-width: -webkit-calc(100% / 5 - 24px);
@@ -1175,7 +1175,7 @@
         -ms-flex: 1 1 calc(100% / 5 - 24px);
             flex: 1 1 calc(100% / 5 - 24px);
     margin-bottom: 30px; }
-    *[row][cols-flex="5"][margins="30"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="5"][margins="30"] > *:not(:nth-child(5n+5)) {
       margin-right: 30px; }
   *[row][cols-flex="5"][margins="35"] > * {
     max-width: -webkit-calc(100% / 5 - 28px);
@@ -1185,7 +1185,7 @@
         -ms-flex: 1 1 calc(100% / 5 - 28px);
             flex: 1 1 calc(100% / 5 - 28px);
     margin-bottom: 35px; }
-    *[row][cols-flex="5"][margins="35"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="5"][margins="35"] > *:not(:nth-child(5n+5)) {
       margin-right: 35px; }
   *[row][cols-flex="5"][margins="40"] > * {
     max-width: -webkit-calc(100% / 5 - 32px);
@@ -1195,7 +1195,7 @@
         -ms-flex: 1 1 calc(100% / 5 - 32px);
             flex: 1 1 calc(100% / 5 - 32px);
     margin-bottom: 40px; }
-    *[row][cols-flex="5"][margins="40"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="5"][margins="40"] > *:not(:nth-child(5n+5)) {
       margin-right: 40px; }
   *[row][cols-flex="5"][margins="45"] > * {
     max-width: -webkit-calc(100% / 5 - 36px);
@@ -1205,7 +1205,7 @@
         -ms-flex: 1 1 calc(100% / 5 - 36px);
             flex: 1 1 calc(100% / 5 - 36px);
     margin-bottom: 45px; }
-    *[row][cols-flex="5"][margins="45"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="5"][margins="45"] > *:not(:nth-child(5n+5)) {
       margin-right: 45px; }
   *[row][cols-flex="5"][margins="50"] > * {
     max-width: -webkit-calc(100% / 5 - 40px);
@@ -1215,7 +1215,7 @@
         -ms-flex: 1 1 calc(100% / 5 - 40px);
             flex: 1 1 calc(100% / 5 - 40px);
     margin-bottom: 50px; }
-    *[row][cols-flex="5"][margins="50"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="5"][margins="50"] > *:not(:nth-child(5n+5)) {
       margin-right: 50px; }
   *[row][cols-flex="6"] > * {
     max-width: -webkit-calc(100% / 6);
@@ -1232,7 +1232,7 @@
         -ms-flex: 1 1 calc(100% / 6 - 4.16667px);
             flex: 1 1 calc(100% / 6 - 4.16667px);
     margin-bottom: 5px; }
-    *[row][cols-flex="6"][margins="5"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="6"][margins="5"] > *:not(:nth-child(6n+6)) {
       margin-right: 5px; }
   *[row][cols-flex="6"][margins="10"] > * {
     max-width: -webkit-calc(100% / 6 - 8.33333px);
@@ -1242,7 +1242,7 @@
         -ms-flex: 1 1 calc(100% / 6 - 8.33333px);
             flex: 1 1 calc(100% / 6 - 8.33333px);
     margin-bottom: 10px; }
-    *[row][cols-flex="6"][margins="10"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="6"][margins="10"] > *:not(:nth-child(6n+6)) {
       margin-right: 10px; }
   *[row][cols-flex="6"][margins="15"] > * {
     max-width: -webkit-calc(100% / 6 - 12.5px);
@@ -1252,7 +1252,7 @@
         -ms-flex: 1 1 calc(100% / 6 - 12.5px);
             flex: 1 1 calc(100% / 6 - 12.5px);
     margin-bottom: 15px; }
-    *[row][cols-flex="6"][margins="15"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="6"][margins="15"] > *:not(:nth-child(6n+6)) {
       margin-right: 15px; }
   *[row][cols-flex="6"][margins="20"] > * {
     max-width: -webkit-calc(100% / 6 - 16.66667px);
@@ -1262,7 +1262,7 @@
         -ms-flex: 1 1 calc(100% / 6 - 16.66667px);
             flex: 1 1 calc(100% / 6 - 16.66667px);
     margin-bottom: 20px; }
-    *[row][cols-flex="6"][margins="20"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="6"][margins="20"] > *:not(:nth-child(6n+6)) {
       margin-right: 20px; }
   *[row][cols-flex="6"][margins="25"] > * {
     max-width: -webkit-calc(100% / 6 - 20.83333px);
@@ -1272,7 +1272,7 @@
         -ms-flex: 1 1 calc(100% / 6 - 20.83333px);
             flex: 1 1 calc(100% / 6 - 20.83333px);
     margin-bottom: 25px; }
-    *[row][cols-flex="6"][margins="25"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="6"][margins="25"] > *:not(:nth-child(6n+6)) {
       margin-right: 25px; }
   *[row][cols-flex="6"][margins="30"] > * {
     max-width: -webkit-calc(100% / 6 - 25px);
@@ -1282,7 +1282,7 @@
         -ms-flex: 1 1 calc(100% / 6 - 25px);
             flex: 1 1 calc(100% / 6 - 25px);
     margin-bottom: 30px; }
-    *[row][cols-flex="6"][margins="30"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="6"][margins="30"] > *:not(:nth-child(6n+6)) {
       margin-right: 30px; }
   *[row][cols-flex="6"][margins="35"] > * {
     max-width: -webkit-calc(100% / 6 - 29.16667px);
@@ -1292,7 +1292,7 @@
         -ms-flex: 1 1 calc(100% / 6 - 29.16667px);
             flex: 1 1 calc(100% / 6 - 29.16667px);
     margin-bottom: 35px; }
-    *[row][cols-flex="6"][margins="35"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="6"][margins="35"] > *:not(:nth-child(6n+6)) {
       margin-right: 35px; }
   *[row][cols-flex="6"][margins="40"] > * {
     max-width: -webkit-calc(100% / 6 - 33.33333px);
@@ -1302,7 +1302,7 @@
         -ms-flex: 1 1 calc(100% / 6 - 33.33333px);
             flex: 1 1 calc(100% / 6 - 33.33333px);
     margin-bottom: 40px; }
-    *[row][cols-flex="6"][margins="40"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="6"][margins="40"] > *:not(:nth-child(6n+6)) {
       margin-right: 40px; }
   *[row][cols-flex="6"][margins="45"] > * {
     max-width: -webkit-calc(100% / 6 - 37.5px);
@@ -1312,7 +1312,7 @@
         -ms-flex: 1 1 calc(100% / 6 - 37.5px);
             flex: 1 1 calc(100% / 6 - 37.5px);
     margin-bottom: 45px; }
-    *[row][cols-flex="6"][margins="45"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="6"][margins="45"] > *:not(:nth-child(6n+6)) {
       margin-right: 45px; }
   *[row][cols-flex="6"][margins="50"] > * {
     max-width: -webkit-calc(100% / 6 - 41.66667px);
@@ -1322,7 +1322,7 @@
         -ms-flex: 1 1 calc(100% / 6 - 41.66667px);
             flex: 1 1 calc(100% / 6 - 41.66667px);
     margin-bottom: 50px; }
-    *[row][cols-flex="6"][margins="50"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="6"][margins="50"] > *:not(:nth-child(6n+6)) {
       margin-right: 50px; }
   *[row][cols-flex="7"] > * {
     max-width: -webkit-calc(100% / 7);
@@ -1339,7 +1339,7 @@
         -ms-flex: 1 1 calc(100% / 7 - 4.28571px);
             flex: 1 1 calc(100% / 7 - 4.28571px);
     margin-bottom: 5px; }
-    *[row][cols-flex="7"][margins="5"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="7"][margins="5"] > *:not(:nth-child(7n+7)) {
       margin-right: 5px; }
   *[row][cols-flex="7"][margins="10"] > * {
     max-width: -webkit-calc(100% / 7 - 8.57143px);
@@ -1349,7 +1349,7 @@
         -ms-flex: 1 1 calc(100% / 7 - 8.57143px);
             flex: 1 1 calc(100% / 7 - 8.57143px);
     margin-bottom: 10px; }
-    *[row][cols-flex="7"][margins="10"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="7"][margins="10"] > *:not(:nth-child(7n+7)) {
       margin-right: 10px; }
   *[row][cols-flex="7"][margins="15"] > * {
     max-width: -webkit-calc(100% / 7 - 12.85714px);
@@ -1359,7 +1359,7 @@
         -ms-flex: 1 1 calc(100% / 7 - 12.85714px);
             flex: 1 1 calc(100% / 7 - 12.85714px);
     margin-bottom: 15px; }
-    *[row][cols-flex="7"][margins="15"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="7"][margins="15"] > *:not(:nth-child(7n+7)) {
       margin-right: 15px; }
   *[row][cols-flex="7"][margins="20"] > * {
     max-width: -webkit-calc(100% / 7 - 17.14286px);
@@ -1369,7 +1369,7 @@
         -ms-flex: 1 1 calc(100% / 7 - 17.14286px);
             flex: 1 1 calc(100% / 7 - 17.14286px);
     margin-bottom: 20px; }
-    *[row][cols-flex="7"][margins="20"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="7"][margins="20"] > *:not(:nth-child(7n+7)) {
       margin-right: 20px; }
   *[row][cols-flex="7"][margins="25"] > * {
     max-width: -webkit-calc(100% / 7 - 21.42857px);
@@ -1379,7 +1379,7 @@
         -ms-flex: 1 1 calc(100% / 7 - 21.42857px);
             flex: 1 1 calc(100% / 7 - 21.42857px);
     margin-bottom: 25px; }
-    *[row][cols-flex="7"][margins="25"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="7"][margins="25"] > *:not(:nth-child(7n+7)) {
       margin-right: 25px; }
   *[row][cols-flex="7"][margins="30"] > * {
     max-width: -webkit-calc(100% / 7 - 25.71429px);
@@ -1389,7 +1389,7 @@
         -ms-flex: 1 1 calc(100% / 7 - 25.71429px);
             flex: 1 1 calc(100% / 7 - 25.71429px);
     margin-bottom: 30px; }
-    *[row][cols-flex="7"][margins="30"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="7"][margins="30"] > *:not(:nth-child(7n+7)) {
       margin-right: 30px; }
   *[row][cols-flex="7"][margins="35"] > * {
     max-width: -webkit-calc(100% / 7 - 30px);
@@ -1399,7 +1399,7 @@
         -ms-flex: 1 1 calc(100% / 7 - 30px);
             flex: 1 1 calc(100% / 7 - 30px);
     margin-bottom: 35px; }
-    *[row][cols-flex="7"][margins="35"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="7"][margins="35"] > *:not(:nth-child(7n+7)) {
       margin-right: 35px; }
   *[row][cols-flex="7"][margins="40"] > * {
     max-width: -webkit-calc(100% / 7 - 34.28571px);
@@ -1409,7 +1409,7 @@
         -ms-flex: 1 1 calc(100% / 7 - 34.28571px);
             flex: 1 1 calc(100% / 7 - 34.28571px);
     margin-bottom: 40px; }
-    *[row][cols-flex="7"][margins="40"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="7"][margins="40"] > *:not(:nth-child(7n+7)) {
       margin-right: 40px; }
   *[row][cols-flex="7"][margins="45"] > * {
     max-width: -webkit-calc(100% / 7 - 38.57143px);
@@ -1419,7 +1419,7 @@
         -ms-flex: 1 1 calc(100% / 7 - 38.57143px);
             flex: 1 1 calc(100% / 7 - 38.57143px);
     margin-bottom: 45px; }
-    *[row][cols-flex="7"][margins="45"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="7"][margins="45"] > *:not(:nth-child(7n+7)) {
       margin-right: 45px; }
   *[row][cols-flex="7"][margins="50"] > * {
     max-width: -webkit-calc(100% / 7 - 42.85714px);
@@ -1429,7 +1429,7 @@
         -ms-flex: 1 1 calc(100% / 7 - 42.85714px);
             flex: 1 1 calc(100% / 7 - 42.85714px);
     margin-bottom: 50px; }
-    *[row][cols-flex="7"][margins="50"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="7"][margins="50"] > *:not(:nth-child(7n+7)) {
       margin-right: 50px; }
   *[row][cols-flex="8"] > * {
     max-width: -webkit-calc(100% / 8);
@@ -1446,7 +1446,7 @@
         -ms-flex: 1 1 calc(100% / 8 - 4.375px);
             flex: 1 1 calc(100% / 8 - 4.375px);
     margin-bottom: 5px; }
-    *[row][cols-flex="8"][margins="5"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="8"][margins="5"] > *:not(:nth-child(8n+8)) {
       margin-right: 5px; }
   *[row][cols-flex="8"][margins="10"] > * {
     max-width: -webkit-calc(100% / 8 - 8.75px);
@@ -1456,7 +1456,7 @@
         -ms-flex: 1 1 calc(100% / 8 - 8.75px);
             flex: 1 1 calc(100% / 8 - 8.75px);
     margin-bottom: 10px; }
-    *[row][cols-flex="8"][margins="10"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="8"][margins="10"] > *:not(:nth-child(8n+8)) {
       margin-right: 10px; }
   *[row][cols-flex="8"][margins="15"] > * {
     max-width: -webkit-calc(100% / 8 - 13.125px);
@@ -1466,7 +1466,7 @@
         -ms-flex: 1 1 calc(100% / 8 - 13.125px);
             flex: 1 1 calc(100% / 8 - 13.125px);
     margin-bottom: 15px; }
-    *[row][cols-flex="8"][margins="15"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="8"][margins="15"] > *:not(:nth-child(8n+8)) {
       margin-right: 15px; }
   *[row][cols-flex="8"][margins="20"] > * {
     max-width: -webkit-calc(100% / 8 - 17.5px);
@@ -1476,7 +1476,7 @@
         -ms-flex: 1 1 calc(100% / 8 - 17.5px);
             flex: 1 1 calc(100% / 8 - 17.5px);
     margin-bottom: 20px; }
-    *[row][cols-flex="8"][margins="20"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="8"][margins="20"] > *:not(:nth-child(8n+8)) {
       margin-right: 20px; }
   *[row][cols-flex="8"][margins="25"] > * {
     max-width: -webkit-calc(100% / 8 - 21.875px);
@@ -1486,7 +1486,7 @@
         -ms-flex: 1 1 calc(100% / 8 - 21.875px);
             flex: 1 1 calc(100% / 8 - 21.875px);
     margin-bottom: 25px; }
-    *[row][cols-flex="8"][margins="25"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="8"][margins="25"] > *:not(:nth-child(8n+8)) {
       margin-right: 25px; }
   *[row][cols-flex="8"][margins="30"] > * {
     max-width: -webkit-calc(100% / 8 - 26.25px);
@@ -1496,7 +1496,7 @@
         -ms-flex: 1 1 calc(100% / 8 - 26.25px);
             flex: 1 1 calc(100% / 8 - 26.25px);
     margin-bottom: 30px; }
-    *[row][cols-flex="8"][margins="30"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="8"][margins="30"] > *:not(:nth-child(8n+8)) {
       margin-right: 30px; }
   *[row][cols-flex="8"][margins="35"] > * {
     max-width: -webkit-calc(100% / 8 - 30.625px);
@@ -1506,7 +1506,7 @@
         -ms-flex: 1 1 calc(100% / 8 - 30.625px);
             flex: 1 1 calc(100% / 8 - 30.625px);
     margin-bottom: 35px; }
-    *[row][cols-flex="8"][margins="35"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="8"][margins="35"] > *:not(:nth-child(8n+8)) {
       margin-right: 35px; }
   *[row][cols-flex="8"][margins="40"] > * {
     max-width: -webkit-calc(100% / 8 - 35px);
@@ -1516,7 +1516,7 @@
         -ms-flex: 1 1 calc(100% / 8 - 35px);
             flex: 1 1 calc(100% / 8 - 35px);
     margin-bottom: 40px; }
-    *[row][cols-flex="8"][margins="40"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="8"][margins="40"] > *:not(:nth-child(8n+8)) {
       margin-right: 40px; }
   *[row][cols-flex="8"][margins="45"] > * {
     max-width: -webkit-calc(100% / 8 - 39.375px);
@@ -1526,7 +1526,7 @@
         -ms-flex: 1 1 calc(100% / 8 - 39.375px);
             flex: 1 1 calc(100% / 8 - 39.375px);
     margin-bottom: 45px; }
-    *[row][cols-flex="8"][margins="45"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="8"][margins="45"] > *:not(:nth-child(8n+8)) {
       margin-right: 45px; }
   *[row][cols-flex="8"][margins="50"] > * {
     max-width: -webkit-calc(100% / 8 - 43.75px);
@@ -1536,7 +1536,7 @@
         -ms-flex: 1 1 calc(100% / 8 - 43.75px);
             flex: 1 1 calc(100% / 8 - 43.75px);
     margin-bottom: 50px; }
-    *[row][cols-flex="8"][margins="50"] > *:not(:nth-child(3n+3)) {
+    *[row][cols-flex="8"][margins="50"] > *:not(:nth-child(8n+8)) {
       margin-right: 50px; }
 
 *[col] {
