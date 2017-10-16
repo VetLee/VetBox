@@ -2571,8 +2571,8 @@
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-*[at~="wb"] {
-  word-break: break-word; }
+*[at~="wb"], *[at~="ba"] {
+  word-break: break-all; }
 
 *[at~="w0"] {
   width: 1%; }

@@ -111,8 +111,8 @@
     text-overflow: ellipsis
 
   @if $USE_TABLE_HELPER
-    *[#{$size}at~="wb"]
-      word-break: break-word
+    *[#{$size}at~="wb"], *[#{$size}at~="ba"]
+      word-break: break-all
     *[#{$size}at~="w0"]
       width: 1%
     *[#{$size}at~="nowrap"]

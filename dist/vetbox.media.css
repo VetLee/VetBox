@@ -2571,8 +2571,8 @@
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-*[at~="wb"] {
-  word-break: break-word; }
+*[at~="wb"], *[at~="ba"] {
+  word-break: break-all; }
 
 *[at~="w0"] {
   width: 1%; }
@@ -5067,8 +5067,8 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
-  *[xs-at~="wb"] {
-    word-break: break-word; }
+  *[xs-at~="wb"], *[xs-at~="ba"] {
+    word-break: break-all; }
   *[xs-at~="w0"] {
     width: 1%; }
   *[xs-at~="nowrap"] {
@@ -7555,8 +7555,8 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
-  *[gt-xs-at~="wb"] {
-    word-break: break-word; }
+  *[gt-xs-at~="wb"], *[gt-xs-at~="ba"] {
+    word-break: break-all; }
   *[gt-xs-at~="w0"] {
     width: 1%; }
   *[gt-xs-at~="nowrap"] {
@@ -10043,8 +10043,8 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
-  *[sm-at~="wb"] {
-    word-break: break-word; }
+  *[sm-at~="wb"], *[sm-at~="ba"] {
+    word-break: break-all; }
   *[sm-at~="w0"] {
     width: 1%; }
   *[sm-at~="nowrap"] {
@@ -12531,8 +12531,8 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
-  *[gt-sm-at~="wb"] {
-    word-break: break-word; }
+  *[gt-sm-at~="wb"], *[gt-sm-at~="ba"] {
+    word-break: break-all; }
   *[gt-sm-at~="w0"] {
     width: 1%; }
   *[gt-sm-at~="nowrap"] {
@@ -15019,8 +15019,8 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
-  *[md-at~="wb"] {
-    word-break: break-word; }
+  *[md-at~="wb"], *[md-at~="ba"] {
+    word-break: break-all; }
   *[md-at~="w0"] {
     width: 1%; }
   *[md-at~="nowrap"] {
@@ -17507,8 +17507,8 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
-  *[gt-md-at~="wb"] {
-    word-break: break-word; }
+  *[gt-md-at~="wb"], *[gt-md-at~="ba"] {
+    word-break: break-all; }
   *[gt-md-at~="w0"] {
     width: 1%; }
   *[gt-md-at~="nowrap"] {
@@ -19995,8 +19995,8 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
-  *[lg-at~="wb"] {
-    word-break: break-word; }
+  *[lg-at~="wb"], *[lg-at~="ba"] {
+    word-break: break-all; }
   *[lg-at~="w0"] {
     width: 1%; }
   *[lg-at~="nowrap"] {
@@ -22483,8 +22483,8 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
-  *[xl-at~="wb"] {
-    word-break: break-word; }
+  *[xl-at~="wb"], *[xl-at~="ba"] {
+    word-break: break-all; }
   *[xl-at~="w0"] {
     width: 1%; }
   *[xl-at~="nowrap"] {
