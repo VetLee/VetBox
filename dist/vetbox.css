@@ -1,3 +1,34 @@
+/*
+@version v1.3.0
+
+$FLEX_LOOP_STEP: 1
+
+$USE_COLS_FLEX: true
+$COLS_FLEX_COUNT: 8
+
+$USE_ROWS_FLEX: true
+$ROWS_FLEX_COUNT: 5
+
+$USE_WRAP_MARGIN_HELPER: true
+$WRAP_MARGIN_END_POINT: 50
+$WRAP_MARGIN_LOOP_STEP: 5
+
+$USE_FLEX_ORDER: true
+$ORDER_RANGE: 20
+
+$USE_FLEX_SHRINK: true
+$FLEX_SHRINK_COUNT: 10
+
+$USE_FLEX_GROW: true
+$FLEX_GROW_COUNT: 10
+
+$USE_MARGINS_HELPER: true
+$MARGIN_END_POINT: 50
+$MARGIN_LOOP_STEP: 5
+
+$USE_TABLE_HELPER: true
+*/
+
 *[visible] {
   position: absolute;
   visibility: hidden; }

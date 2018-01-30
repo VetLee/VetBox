@@ -10,6 +10,7 @@ rigger = require('gulp-rigger')
 slim = require('gulp-slim')
 browserSync = require('browser-sync')
 sourcemaps = require('gulp-sourcemaps')
+header = require('gulp-header')
 reload = browserSync.reload
 
 path =
@@ -95,6 +96,19 @@ gulp.task 'default', [
   'watch'
 ]
 
+pkg = require './package.json'
+fs = require 'fs'
+sassConfig = fs.readFileSync('./src/styles/config.sass', 'utf-8').replace(/\n$/, '')
+
+banner = """
+/*
+@version v<%= pkg.version %>
+
+#{sassConfig}
+*/
+
+
+"""
 
 gulp.task 'dist', ->
   gulp.src(path.src.vetbox.core)
@@ -103,8 +117,10 @@ gulp.task 'dist', ->
     .pipe(prefixer(
       browsers: ['last 10 versions']
     ))
+    .pipe(header(banner, { pkg : pkg } ))
     .pipe(gulp.dest(path.dist))
     .pipe(cleanCSS())
+    .pipe(header(banner, { pkg : pkg } ))
     .pipe(sourcemaps.write('.'))
     .pipe(rename(
       suffix: ".min"
@@ -119,8 +135,10 @@ gulp.task 'dist', ->
     .pipe(prefixer(
       browsers: ['last 10 versions']
     ))
+    .pipe(header(banner, { pkg : pkg } ))
     .pipe(gulp.dest(path.dist))
     .pipe(cleanCSS())
+    .pipe(header(banner, { pkg : pkg } ))
     .pipe(sourcemaps.write('.'))
     .pipe(rename(
       suffix: ".min"
