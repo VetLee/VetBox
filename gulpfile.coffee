@@ -42,28 +42,36 @@ config =
   host: 'localhost'
   port: 3333
   logPrefix: 'Gulp_log'
+  
+swallowError = (error)->
+  console.log error.toString()
+  this.emit('end')
 
 gulp.task 'html:build', ->
   gulp.src(path.src.slim)
     .pipe(rigger())
     .pipe(slim(pretty: true))
+    .on('error', swallowError)
     .pipe(gulp.dest(path.build.html))
     .pipe reload(stream: true)
 
 gulp.task 'style:build', ->
   gulp.src(path.src.style)
     .pipe(sass())
+    .on('error', swallowError)
     .pipe(gulp.dest(path.build.css))
     .pipe reload(stream: true)
 
 gulp.task 'js:build', ->
   gulp.src(path.src.js)
     .pipe(rigger())
+    .on('error', swallowError)
     .pipe(gulp.dest(path.build.js))
     .pipe reload(stream: true)
 
 gulp.task 'image:build', ->
   gulp.src(path.src.img)
+    .on('error', swallowError)
     .pipe(gulp.dest(path.build.img))
     .pipe reload(stream: true)
 
