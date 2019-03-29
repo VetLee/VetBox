@@ -35,7 +35,7 @@
         @include calc-row-flex($i * $FLEX_LOOP_STEP)
 
     @if $USE_COLS_FLEX
-      @for $cf from 1 through $COLS_FLEX_COUNT
+      @for $cf from 2 through $COLS_FLEX_COUNT
         &[#{$size}cols-flex="#{$cf}"]
           & > *
             max-width: #{100% / $cf}
@@ -62,7 +62,7 @@
         @include calc-col-flex($i * $FLEX_LOOP_STEP)
 
     @if $USE_ROWS_FLEX
-      @for $i from 1 through $ROWS_FLEX_COUNT
+      @for $i from 2 through $ROWS_FLEX_COUNT
         &[#{$size}rows-flex="#{$i}"] > *
           max-height: #{100% / $i}
           flex: 1 1 #{100% / $i}
