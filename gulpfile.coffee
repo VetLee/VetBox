@@ -99,16 +99,23 @@ gulp.task 'default', [
 pkg = require './package.json'
 fs = require 'fs'
 sassConfig = fs.readFileSync('./src/styles/config.sass', 'utf-8').replace(/\n$/, '')
+mediaConfig = fs.readFileSync('./src/styles/media.sass', 'utf-8').replace(/\n$/, '').replace('@import "vetbox"\n\n', '')
 
 banner = """
 /*
 @version v<%= pkg.version %>
 
 #{sassConfig}
-*/
-
-
+*/\n\n
 """
+
+mediaBanner = """
+#{banner}
+/*
+#{mediaConfig}
+*/\n\n\n
+"""
+
 
 gulp.task 'dist', ->
   gulp.src(path.src.vetbox.core)
@@ -126,6 +133,7 @@ gulp.task 'dist', ->
       suffix: ".min"
       ))
     .pipe(gulp.dest(path.dist))
+    
   gulp.src(path.src.vetbox.media)
     .pipe(rename(
       basename: "vetbox.media"
@@ -135,10 +143,10 @@ gulp.task 'dist', ->
     .pipe(prefixer(
       browsers: ['last 10 versions']
     ))
-    .pipe(header(banner, { pkg : pkg } ))
+    .pipe(header(mediaBanner, { pkg : pkg } ))
     .pipe(gulp.dest(path.dist))
     .pipe(cleanCSS())
-    .pipe(header(banner, { pkg : pkg } ))
+    .pipe(header(mediaBanner, { pkg : pkg } ))
     .pipe(sourcemaps.write('.'))
     .pipe(rename(
       suffix: ".min"
