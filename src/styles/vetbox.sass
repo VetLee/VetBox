@@ -27,8 +27,8 @@
 
   *[#{$size}row]
     flex-direction: row
-    @include justify-content-set(row)
-    @include align-items-set(row)
+    @include justify-content-set(row, $size)
+    @include align-items-set(row, $size)
 
     @for $i from 1 through (100 / $FLEX_LOOP_STEP)
       *[#{$size}flex="#{$i * $FLEX_LOOP_STEP}"]
@@ -52,8 +52,8 @@
 
   *[#{$size}col]
     flex-direction: column
-    @include justify-content-set(col)
-    @include align-items-set(col)
+    @include justify-content-set(col, $size)
+    @include align-items-set(col, $size)
     *[#{$size}flex]
       flex-basis: 1px
       min-height: 0
@@ -68,10 +68,10 @@
           flex: 1 1 #{100% / $i}
 
   *[#{$size}align-content]
-    @include align-content-set
+    @include align-content-set($size)
 
   *[#{$size}align-self]
-    @include align-self-set
+    @include align-self-set($size)
 
   @if $USE_FLEX_ORDER
     @for $i from ($ORDER_RANGE/2) * -1 through $ORDER_RANGE/2

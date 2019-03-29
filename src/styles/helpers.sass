@@ -19,52 +19,52 @@
     @else
       flex: 1 1 $val + %
 
-@mixin justify-content-set($direction)
-  &[#{$direction}^=flex-start], &[#{$direction}^=fs]
+@mixin justify-content-set($direction, $size)
+  &[#{$size}#{$direction}^=flex-start], &[#{$size}#{$direction}^=fs]
     justify-content: flex-start
-  &[#{$direction}^=flex-end], &[#{$direction}^=fe]
+  &[#{$size}#{$direction}^=flex-end], &[#{$size}#{$direction}^=fe]
     justify-content: flex-end
-  &[#{$direction}^=center], &[#{$direction}^=cn]
+  &[#{$size}#{$direction}^=center], &[#{$size}#{$direction}^=cn]
     justify-content: center
-  &[#{$direction}^=space-between], &[#{$direction}^=sb]
+  &[#{$size}#{$direction}^=space-between], &[#{$size}#{$direction}^=sb]
     justify-content: space-between
-  &[#{$direction}^=space-around], &[#{$direction}^=sa]
+  &[#{$size}#{$direction}^=space-around], &[#{$size}#{$direction}^=sa]
     justify-content: space-around
 
-@mixin align-items-set($direction)
-  &[#{$direction}$=flex-start], &[#{$direction}$=fs]
+@mixin align-items-set($direction, $size)
+  &[#{$size}#{$direction}$=flex-start], &[#{$size}#{$direction}$=fs]
     align-items: flex-start
-  &[#{$direction}$=flex-end], &[#{$direction}$=fe]
+  &[#{$size}#{$direction}$=flex-end], &[#{$size}#{$direction}$=fe]
     align-items: flex-end
-  &[#{$direction}$=center], &[#{$direction}$=cn]
+  &[#{$size}#{$direction}$=center], &[#{$size}#{$direction}$=cn]
     align-items: center
-  &[#{$direction}$=baseline], &[#{$direction}$=bl]
+  &[#{$size}#{$direction}$=baseline], &[#{$size}#{$direction}$=bl]
     align-items: baseline
-  &[#{$direction}$=stretch], &[#{$direction}$=str]
+  &[#{$size}#{$direction}$=stretch], &[#{$size}#{$direction}$=str]
     align-items: stretch
 
-@mixin align-self-set
-  &[align-self=flex-start], &[align-self=fs]
+@mixin align-self-set($size)
+  &[#{$size}align-self=flex-start], &[#{$size}align-self=fs]
     align-self: flex-start
-  &[align-self=flex-end], &[align-self=fe]
+  &[#{$size}align-self=flex-end], &[#{$size}align-self=fe]
     align-self: flex-end
-  &[align-self=center], &[align-self=cn]
+  &[#{$size}align-self=center], &[#{$size}align-self=cn]
     align-self: center
-  &[align-self=baseline], &[align-self=bl]
+  &[#{$size}align-self=baseline], &[#{$size}align-self=bl]
     align-self: baseline
-  &[align-self=stretch], &[align-self=str]
+  &[#{$size}align-self=stretch], &[#{$size}align-self=str]
     align-self: stretch
 
-@mixin align-content-set
-  &[align-content=flex-start], &[align-content=fs]
+@mixin align-content-set($size)
+  &[#{$size}align-content=flex-start], &[#{$size}align-content=fs]
     align-content: flex-start
-  &[align-content=flex-end], &[align-content=fe]
+  &[#{$size}align-content=flex-end], &[#{$size}align-content=fe]
     align-content: flex-end
-  &[align-content=center], &[align-content=cn]
+  &[#{$size}align-content=center], &[#{$size}align-content=cn]
     align-content: center
-  &[align-content=baseline], &[align-content=bl]
+  &[#{$size}align-content=baseline], &[#{$size}align-content=bl]
     align-content: baseline
-  &[align-content=stretch], &[align-content=str]
+  &[#{$size}align-content=stretch], &[#{$size}align-content=str]
     align-content: stretch
 
 @mixin hide-set
