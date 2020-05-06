@@ -2,7 +2,7 @@
 
 gulp = require('gulp')
 watch = require('gulp-watch')
-prefixer = require('gulp-autoprefixer')
+autoprefixer = require('gulp-autoprefixer')
 sass = require('gulp-sass')
 cleanCSS = require('gulp-clean-css')
 rename = require("gulp-rename")
@@ -121,34 +121,24 @@ gulp.task 'dist', ->
   gulp.src(path.src.vetbox.core)
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(prefixer(
-      browsers: ['last 10 versions']
-    ))
+    .pipe(autoprefixer())
     .pipe(header(banner, { pkg : pkg } ))
     .pipe(gulp.dest(path.dist))
     .pipe(cleanCSS())
     .pipe(header(banner, { pkg : pkg } ))
     .pipe(sourcemaps.write('.'))
-    .pipe(rename(
-      suffix: ".min"
-      ))
+    .pipe(rename(suffix: ".min"))
     .pipe(gulp.dest(path.dist))
     
   gulp.src(path.src.vetbox.media)
-    .pipe(rename(
-      basename: "vetbox.media"
-      ))
+    .pipe(rename(basename: "vetbox.media"))
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(prefixer(
-      browsers: ['last 10 versions']
-    ))
+    .pipe(autoprefixer())
     .pipe(header(mediaBanner, { pkg : pkg } ))
     .pipe(gulp.dest(path.dist))
     .pipe(cleanCSS())
     .pipe(header(mediaBanner, { pkg : pkg } ))
     .pipe(sourcemaps.write('.'))
-    .pipe(rename(
-      suffix: ".min"
-      ))
+    .pipe(rename(suffix: ".min"))
     .pipe(gulp.dest(path.dist))

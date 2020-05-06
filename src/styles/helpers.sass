@@ -7,8 +7,8 @@
       max-width: 66.6666%
       flex: 1 1 #{200% / 3}
     @else
-      max-width: $val + %
-      flex: 1 1 $val + %
+      max-width: $val * 1%
+      flex: 1 1 $val * 1%
 
 @mixin calc-col-flex($val)
   @if $val == 33
@@ -17,7 +17,7 @@
     @if $val == 66
       flex: 1 1 #{200% / 3}
     @else
-      flex: 1 1 $val + %
+      flex: 1 1 $val * 1%
 
 @mixin justify-content-set($direction, $size)
   &[#{$size}#{$direction}^=flex-start], &[#{$size}#{$direction}^=fs]

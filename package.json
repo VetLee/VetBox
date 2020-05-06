@@ -1,6 +1,6 @@
 {
   "name": "VetBox",
-  "version": "1.4.0",
+  "version": "1.5",
   "description": "Layout css library",
   "author": "VetLee",
   "license": "ISC",
@@ -14,16 +14,22 @@
   "homepage": "https://github.com/VetLee/VetBox",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.14.*",
-    "gulp": "^3.9.*",
-    "gulp-autoprefixer": "^3.1.*",
+    "browser-sync": "^2.26.7",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "7.0.1",
     "gulp-clean-css": "^2.0.*",
     "gulp-header": "^2.0.1",
     "gulp-rename": "^1.2.*",
     "gulp-rigger": "^0.5.*",
-    "gulp-sass": "^2.3.*",
+    "gulp-sass": "^3",
     "gulp-slim": "^0.3.*",
     "gulp-sourcemaps": "^2.2.*",
     "gulp-watch": "^4.3.*"
-  }
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
+  },
+  "browserslist": [
+    "last 2 years"
+  ]
 }
