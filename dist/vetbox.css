@@ -1,5 +1,5 @@
 /*
-@version v1.5
+@version v1.6
 
 $FLEX_LOOP_STEP: 1
 
@@ -12,6 +12,8 @@ $ROWS_FLEX_COUNT: 5
 $USE_WRAP_MARGIN_HELPER: true
 $WRAP_MARGIN_END_POINT: 50
 $WRAP_MARGIN_LOOP_STEP: 5
+
+$USE_ALIGN_CONTENT: false
 
 $USE_FLEX_ORDER: true
 $ORDER_RANGE: 20
@@ -29,13 +31,8 @@ $MARGIN_LOOP_STEP: 5
 $USE_TABLE_HELPER: true
 */
 
-*[visible] {
-  position: absolute;
-  visibility: hidden; }
-
 *[hide=""] {
-  position: absolute;
-  visibility: hidden; }
+  display: none !important; }
 
 *[row], *[col] {
   display: flex; }
@@ -49,25 +46,25 @@ $USE_TABLE_HELPER: true
 
 *[row] {
   flex-direction: row; }
-  *[row][row^=flex-start], *[row][row^=fs] {
+  *[row][row^=fs] {
     justify-content: flex-start; }
-  *[row][row^=flex-end], *[row][row^=fe] {
+  *[row][row^=fe] {
     justify-content: flex-end; }
-  *[row][row^=center], *[row][row^=cn] {
+  *[row][row^=cn] {
     justify-content: center; }
-  *[row][row^=space-between], *[row][row^=sb] {
+  *[row][row^=sb] {
     justify-content: space-between; }
-  *[row][row^=space-around], *[row][row^=sa] {
+  *[row][row^=sa] {
     justify-content: space-around; }
-  *[row][row$=flex-start], *[row][row$=fs] {
+  *[row][row$=fs] {
     align-items: flex-start; }
-  *[row][row$=flex-end], *[row][row$=fe] {
+  *[row][row$=fe] {
     align-items: flex-end; }
-  *[row][row$=center], *[row][row$=cn] {
+  *[row][row$=cn] {
     align-items: center; }
-  *[row][row$=baseline], *[row][row$=bl] {
+  *[row][row$=bl] {
     align-items: baseline; }
-  *[row][row$=stretch], *[row][row$=str] {
+  *[row][row$=str] {
     align-items: stretch; }
   *[row] *[flex="1"] {
     max-width: 1%;
@@ -369,6 +366,12 @@ $USE_TABLE_HELPER: true
   *[row] *[flex="100"] {
     max-width: 100%;
     flex: 1 1 100%; }
+  *[row] *[flex="33"] {
+    max-width: 33.3333%;
+    flex: 1 1 100%/3; }
+  *[row] *[flex="66"] {
+    max-width: 66.6666%;
+    flex: 1 1 200%/3; }
   *[row][cols-flex="2"] > * {
     max-width: 50%;
     flex: 1 1 50%; }
@@ -813,25 +816,25 @@ $USE_TABLE_HELPER: true
 
 *[col] {
   flex-direction: column; }
-  *[col][col^=flex-start], *[col][col^=fs] {
+  *[col][col^=fs] {
     justify-content: flex-start; }
-  *[col][col^=flex-end], *[col][col^=fe] {
+  *[col][col^=fe] {
     justify-content: flex-end; }
-  *[col][col^=center], *[col][col^=cn] {
+  *[col][col^=cn] {
     justify-content: center; }
-  *[col][col^=space-between], *[col][col^=sb] {
+  *[col][col^=sb] {
     justify-content: space-between; }
-  *[col][col^=space-around], *[col][col^=sa] {
+  *[col][col^=sa] {
     justify-content: space-around; }
-  *[col][col$=flex-start], *[col][col$=fs] {
+  *[col][col$=fs] {
     align-items: flex-start; }
-  *[col][col$=flex-end], *[col][col$=fe] {
+  *[col][col$=fe] {
     align-items: flex-end; }
-  *[col][col$=center], *[col][col$=cn] {
+  *[col][col$=cn] {
     align-items: center; }
-  *[col][col$=baseline], *[col][col$=bl] {
+  *[col][col$=bl] {
     align-items: baseline; }
-  *[col][col$=stretch], *[col][col$=str] {
+  *[col][col$=str] {
     align-items: stretch; }
   *[col] *[flex] {
     flex-basis: 1px;
@@ -1049,34 +1052,19 @@ $USE_TABLE_HELPER: true
     max-height: 20%;
     flex: 1 1 20%; }
 
-*[align-content][align-content=flex-start], *[align-content][align-content=fs] {
-  align-content: flex-start; }
-
-*[align-content][align-content=flex-end], *[align-content][align-content=fe] {
-  align-content: flex-end; }
-
-*[align-content][align-content=center], *[align-content][align-content=cn] {
-  align-content: center; }
-
-*[align-content][align-content=baseline], *[align-content][align-content=bl] {
-  align-content: baseline; }
-
-*[align-content][align-content=stretch], *[align-content][align-content=str] {
-  align-content: stretch; }
-
-*[align-self][align-self=flex-start], *[align-self][align-self=fs] {
+*[align-self][align-self=fs] {
   align-self: flex-start; }
 
-*[align-self][align-self=flex-end], *[align-self][align-self=fe] {
+*[align-self][align-self=fe] {
   align-self: flex-end; }
 
-*[align-self][align-self=center], *[align-self][align-self=cn] {
+*[align-self][align-self=cn] {
   align-self: center; }
 
-*[align-self][align-self=baseline], *[align-self][align-self=bl] {
+*[align-self][align-self=bl] {
   align-self: baseline; }
 
-*[align-self][align-self=stretch], *[align-self][align-self=str] {
+*[align-self][align-self=str] {
   align-self: stretch; }
 
 [order="-10"] {
@@ -1208,136 +1196,136 @@ $USE_TABLE_HELPER: true
 [flex-grow="10"] {
   flex-grow: 10; }
 
-[margin-top="0"], [mt="0"] {
+[mt="0"] {
   margin-top: 0px !important; }
 
-[margin-top="5"], [mt="5"] {
+[mt="5"] {
   margin-top: 5px !important; }
 
-[margin-top="10"], [mt="10"] {
+[mt="10"] {
   margin-top: 10px !important; }
 
-[margin-top="15"], [mt="15"] {
+[mt="15"] {
   margin-top: 15px !important; }
 
-[margin-top="20"], [mt="20"] {
+[mt="20"] {
   margin-top: 20px !important; }
 
-[margin-top="25"], [mt="25"] {
+[mt="25"] {
   margin-top: 25px !important; }
 
-[margin-top="30"], [mt="30"] {
+[mt="30"] {
   margin-top: 30px !important; }
 
-[margin-top="35"], [mt="35"] {
+[mt="35"] {
   margin-top: 35px !important; }
 
-[margin-top="40"], [mt="40"] {
+[mt="40"] {
   margin-top: 40px !important; }
 
-[margin-top="45"], [mt="45"] {
+[mt="45"] {
   margin-top: 45px !important; }
 
-[margin-top="50"], [mt="50"] {
+[mt="50"] {
   margin-top: 50px !important; }
 
-[margin-right="0"], [mr="0"] {
+[mr="0"] {
   margin-right: 0px !important; }
 
-[margin-right="5"], [mr="5"] {
+[mr="5"] {
   margin-right: 5px !important; }
 
-[margin-right="10"], [mr="10"] {
+[mr="10"] {
   margin-right: 10px !important; }
 
-[margin-right="15"], [mr="15"] {
+[mr="15"] {
   margin-right: 15px !important; }
 
-[margin-right="20"], [mr="20"] {
+[mr="20"] {
   margin-right: 20px !important; }
 
-[margin-right="25"], [mr="25"] {
+[mr="25"] {
   margin-right: 25px !important; }
 
-[margin-right="30"], [mr="30"] {
+[mr="30"] {
   margin-right: 30px !important; }
 
-[margin-right="35"], [mr="35"] {
+[mr="35"] {
   margin-right: 35px !important; }
 
-[margin-right="40"], [mr="40"] {
+[mr="40"] {
   margin-right: 40px !important; }
 
-[margin-right="45"], [mr="45"] {
+[mr="45"] {
   margin-right: 45px !important; }
 
-[margin-right="50"], [mr="50"] {
+[mr="50"] {
   margin-right: 50px !important; }
 
-[margin-bottom="0"], [mb="0"] {
+[mb="0"] {
   margin-bottom: 0px !important; }
 
-[margin-bottom="5"], [mb="5"] {
+[mb="5"] {
   margin-bottom: 5px !important; }
 
-[margin-bottom="10"], [mb="10"] {
+[mb="10"] {
   margin-bottom: 10px !important; }
 
-[margin-bottom="15"], [mb="15"] {
+[mb="15"] {
   margin-bottom: 15px !important; }
 
-[margin-bottom="20"], [mb="20"] {
+[mb="20"] {
   margin-bottom: 20px !important; }
 
-[margin-bottom="25"], [mb="25"] {
+[mb="25"] {
   margin-bottom: 25px !important; }
 
-[margin-bottom="30"], [mb="30"] {
+[mb="30"] {
   margin-bottom: 30px !important; }
 
-[margin-bottom="35"], [mb="35"] {
+[mb="35"] {
   margin-bottom: 35px !important; }
 
-[margin-bottom="40"], [mb="40"] {
+[mb="40"] {
   margin-bottom: 40px !important; }
 
-[margin-bottom="45"], [mb="45"] {
+[mb="45"] {
   margin-bottom: 45px !important; }
 
-[margin-bottom="50"], [mb="50"] {
+[mb="50"] {
   margin-bottom: 50px !important; }
 
-[margin-left="0"], [ml="0"] {
+[ml="0"] {
   margin-left: 0px !important; }
 
-[margin-left="5"], [ml="5"] {
+[ml="5"] {
   margin-left: 5px !important; }
 
-[margin-left="10"], [ml="10"] {
+[ml="10"] {
   margin-left: 10px !important; }
 
-[margin-left="15"], [ml="15"] {
+[ml="15"] {
   margin-left: 15px !important; }
 
-[margin-left="20"], [ml="20"] {
+[ml="20"] {
   margin-left: 20px !important; }
 
-[margin-left="25"], [ml="25"] {
+[ml="25"] {
   margin-left: 25px !important; }
 
-[margin-left="30"], [ml="30"] {
+[ml="30"] {
   margin-left: 30px !important; }
 
-[margin-left="35"], [ml="35"] {
+[ml="35"] {
   margin-left: 35px !important; }
 
-[margin-left="40"], [ml="40"] {
+[ml="40"] {
   margin-left: 40px !important; }
 
-[margin-left="45"], [ml="45"] {
+[ml="45"] {
   margin-left: 45px !important; }
 
-[margin-left="50"], [ml="50"] {
+[ml="50"] {
   margin-left: 50px !important; }
 
 *[nowrap-ell], *[vb-ne] {

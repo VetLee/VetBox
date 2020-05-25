@@ -13,9 +13,6 @@
 <div hide="md">
 <div hide="xs md lg">
 
-<div visible="md">
-<div visible="xs md lg">
-
 <div order="-1">
 <div flex-shrink="2">
 <div flex-grow="5">

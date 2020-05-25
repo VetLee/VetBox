@@ -6,12 +6,8 @@
   @if $size!=""
     *[hide~="#{$size}"]
       @include hide-set
-    &[visible~="#{$size}"]
-      @include unhide-set
     $size: $size + '-'
   @else
-    *[visible]
-      @include hide-set
     *[hide=""]
       @include hide-set
 
@@ -33,6 +29,12 @@
     @for $i from 1 through (100 / $FLEX_LOOP_STEP)
       *[#{$size}flex="#{$i * $FLEX_LOOP_STEP}"]
         @include calc-row-flex($i * $FLEX_LOOP_STEP)
+
+    @if $USE_COLS_FLEX != 1
+      *[#{$size}flex="33"]
+        @include calc-row-flex(33)
+      *[#{$size}flex="66"]
+        @include calc-row-flex(66)
 
     @if $USE_COLS_FLEX
       @for $cf from 2 through $COLS_FLEX_COUNT
@@ -67,8 +69,9 @@
           max-height: #{100% / $i}
           flex: 1 1 #{100% / $i}
 
-  *[#{$size}align-content]
-    @include align-content-set($size)
+  @if $USE_ALIGN_CONTENT
+    *[#{$size}align-content]
+      @include align-content-set($size)
 
   *[#{$size}align-self]
     @include align-self-set($size)
@@ -90,19 +93,19 @@
 
   @if $USE_MARGINS_HELPER
     @for $i from 0 through ($MARGIN_END_POINT / $MARGIN_LOOP_STEP)
-      &[#{$size}margin-top="#{$i * $MARGIN_LOOP_STEP}"], &[#{$size}mt="#{$i * $MARGIN_LOOP_STEP}"]
+      &[#{$size}mt="#{$i * $MARGIN_LOOP_STEP}"]
         margin-top: #{$i * $MARGIN_LOOP_STEP}px !important
 
     @for $i from 0 through ($MARGIN_END_POINT / $MARGIN_LOOP_STEP)
-      &[#{$size}margin-right="#{$i * $MARGIN_LOOP_STEP}"], &[#{$size}mr="#{$i * $MARGIN_LOOP_STEP}"]
+      &[#{$size}mr="#{$i * $MARGIN_LOOP_STEP}"]
         margin-right: #{$i * $MARGIN_LOOP_STEP}px !important
 
     @for $i from 0 through ($MARGIN_END_POINT / $MARGIN_LOOP_STEP)
-      &[#{$size}margin-bottom="#{$i * $MARGIN_LOOP_STEP}"], &[#{$size}mb="#{$i * $MARGIN_LOOP_STEP}"]
+      &[#{$size}mb="#{$i * $MARGIN_LOOP_STEP}"]
         margin-bottom: #{$i * $MARGIN_LOOP_STEP}px !important
 
     @for $i from 0 through ($MARGIN_END_POINT / $MARGIN_LOOP_STEP)
-      &[#{$size}margin-left="#{$i * $MARGIN_LOOP_STEP}"], &[#{$size}ml="#{$i * $MARGIN_LOOP_STEP}"]
+      &[#{$size}ml="#{$i * $MARGIN_LOOP_STEP}"]
         margin-left: #{$i * $MARGIN_LOOP_STEP}px !important
 
   *[#{$size}nowrap-ell], *[#{$size}vb-ne]
